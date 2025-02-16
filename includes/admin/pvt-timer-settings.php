@@ -242,7 +242,7 @@ function post_display_timer_settings_page() {
 
 					<div class="reflected-changes d-flex">
 						<p class="submit">
-							<input type="submit" name="submit" id="submit" class="button button-primary" value="<?php esc_attr_e( 'Save Changes', 'post-view-timer' ); ?>">
+							<input type="submit" name="submit" id="submit" class="button button-primary" value="<?php esc_attr_e( 'Save Changes', 'post-display-timer' ); ?>">
 						</p>
 					</div>
 				</form>

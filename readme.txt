@@ -1,5 +1,5 @@
 === Post Display Timer ===
-Contributors: shibjeednwr
+Contributors: shibjeedanuwar
 Tags: post timer, content timer, timed content, post display timer, content management
 Requires at least: 6.0
 Tested up to: 6.7
