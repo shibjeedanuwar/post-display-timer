@@ -18,13 +18,15 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+global $PDT_options;
 
 // Constants.
-define( 'POSTDISPLAYTIMER_DIR', plugin_dir_path( __FILE__ ) );
-define( 'POSTDISPLAYTIMER_URL', plugin_dir_url( __FILE__ ) );
-define( 'POSTDISPLAYTIMER_VERSION', '1.0.0' );
+define( 'PDTDISPLAYTIMER_DIR', plugin_dir_path( __FILE__ ) );
+define( 'PDTDISPLAYTIMER_URL', plugin_dir_url( __FILE__ ) );
+define( 'PDTDISPLAYTIMER_VERSION', '1.0.0' );
+
 
 // Load core functionality.
-require_once POSTDISPLAYTIMER_DIR . 'includes/core/class-postdisplaytimerplugin.php';
-require_once POSTDISPLAYTIMER_DIR . 'includes/admin/pvt-timer-admin-menu.php';
-require_once POSTDISPLAYTIMER_DIR . 'includes/frontend/class-postdisplaytimer-frontend.php';
+require_once PDTDISPLAYTIMER_DIR . 'includes/core/class-postdisplaytimerplugin.php';
+require_once PDTDISPLAYTIMER_DIR . 'includes/admin/pvt-timer-admin-menu.php';
+require_once PDTDISPLAYTIMER_DIR . 'includes/frontend/class-pdt-display-timer-frontend.php';

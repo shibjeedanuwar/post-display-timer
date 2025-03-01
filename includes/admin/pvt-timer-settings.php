@@ -6,15 +6,13 @@
  * @since 1.0.0
  */
 
-namespace PostDisplayTimer\Admin;
-
 // Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
 /**
  * Display the Timer Settings page
  */
-function post_display_timer_settings_page() {
+function pdt_display_timer_settings_page() {
 	if ( ! \current_user_can( 'manage_options' ) ) {
 		return;
 	}
@@ -23,8 +21,8 @@ function post_display_timer_settings_page() {
 	$message_type = '';
 
 	// Handle form submission.
-	if ( isset( $_POST['action'] ) && 'post_display_timer_save_settings' === $_POST['action'] ) {
-		\check_admin_referer( 'post_display_timer_settings_nonce', 'post_display_timer_nonce' );
+	if ( isset( $_POST['action'] ) && 'pdt_display_timer_save_settings' === $_POST['action'] ) {
+		\check_admin_referer( 'pdt_display_timer_settings_nonce', 'pdt_display_timer_nonce' );
 
 		// Get sanitized form data.
 		$form_data = array(
@@ -69,7 +67,7 @@ function post_display_timer_settings_page() {
 		if ( empty( $errors ) ) {
 			// Save validated options.
 			foreach ( $form_data as $key => $value ) {
-				update_option( "post_display_timer_{$key}", $value );
+				update_option( "pdt_display_timer_{$key}", $value );
 			}
 			$message      = 'Settings saved successfully!';
 			$message_type = 'success';
@@ -81,17 +79,17 @@ function post_display_timer_settings_page() {
 
 	// Get settings with defaults.
 	$options = array(
-		'enable_countdown_timer' => get_option( 'post_display_timer_enable_countdown_timer', 0 ),
-		'set_count_timer'        => get_option( 'post_display_timer_set_count_timer', 60 ),
-		'show_visited_post_num'  => get_option( 'post_display_timer_show_visited_post_num', 0 ),
-		'check_currentPage'      => get_option( 'post_display_timer_check_currentPage', 0 ),
-		'completion_code'        => get_option( 'post_display_timer_completion_code', '' ),
-		'start_button'           => get_option( 'post_display_timer_start_button', 0 ),
-		'view_number_post'       => get_option( 'post_display_timer_view_number_post', 2 ),
-		'random_post'            => get_option( 'post_display_timer_random_post', 0 ),
-		'post_urls'              => get_option( 'post_display_timer_post_urls', '' ),
-		'multiple_tab'           => get_option( 'post_display_timer_multiple_tab', 0 ),
-		'delayed_timer'          => get_option( 'post_display_timer_delayed_timer', 0 ),
+		'enable_countdown_timer' => get_option( 'pdt_display_timer_enable_countdown_timer', 0 ),
+		'set_count_timer'        => get_option( 'pdt_display_timer_set_count_timer', 60 ),
+		'show_visited_post_num'  => get_option( 'pdt_display_timer_show_visited_post_num', 0 ),
+		'check_currentPage'      => get_option( 'pdt_display_timer_check_currentPage', 0 ),
+		'completion_code'        => get_option( 'pdt_display_timer_completion_code', '' ),
+		'start_button'           => get_option( 'pdt_display_timer_start_button', 0 ),
+		'view_number_post'       => get_option( 'pdt_display_timer_view_number_post', 2 ),
+		'random_post'            => get_option( 'pdt_display_timer_random_post', 0 ),
+		'post_urls'              => get_option( 'pdt_display_timer_post_urls', '' ),
+		'multiple_tab'           => get_option( 'pdt_display_timer_multiple_tab', 0 ),
+		'delayed_timer'          => get_option( 'pdt_display_timer_delayed_timer', 0 ),
 	);
 
 	?>
@@ -108,8 +106,8 @@ function post_display_timer_settings_page() {
 		<div class="row">
 			<div class="col-12 col-lg-8 border">
 			<form method="post" action="">
-					<?php wp_nonce_field( 'post_display_timer_settings_nonce', 'post_display_timer_nonce' ); ?>
-					<input type="hidden" name="action" value="post_display_timer_save_settings">
+					<?php wp_nonce_field( 'pdt_display_timer_settings_nonce', 'pdt_display_timer_nonce' ); ?>
+					<input type="hidden" name="action" value="pdt_display_timer_save_settings">
 					<table class="form-table indent-children" role="presentation" id="post-timer">
 						<tbody class="">
 							<tr>
@@ -117,13 +115,13 @@ function post_display_timer_settings_page() {
 								<td>
 									<fieldset>
 										<legend class="screen-reader-text"><span>Default Post Settings</span></legend>
-										<label for="enable_countdown_timer" class="post_display_timer_switch">
+										<label for="enable_countdown_timer" class="pdt_display_timer_switch">
 											<input type="checkbox" 
 											id="enable_countdown_timer" 
 											name="enable_countdown_timer" 
 											value="1" 
 											<?php checked( $options['enable_countdown_timer'], 1 ); ?>>
-											<span class="post_display_timer_slider"></span>
+											<span class="pdt_display_timer_slider"></span>
 										</label>
 										Enable Countdown Timer
 										<br><br>

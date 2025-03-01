@@ -1,18 +1,18 @@
 
-.post_display_timer_switch {
+.pdt_display_timer_switch {
 	position: relative;
 	display: inline-block;
 	width: 55px;
 	height: 28px;
 }
 
-.post_display_timer_switch input {
+.pdt_display_timer_switch input {
 	opacity: 0;
 	width: 0;
 	height: 0;
 }
 
-.post_display_timer_slider {
+.pdt_display_timer_slider {
 	position: absolute;
 	cursor: pointer;
 	top: 0;
@@ -24,7 +24,7 @@
 	border-radius: 34px;
 }
 
-.post_display_timer_slider:before {
+.pdt_display_timer_slider:before {
 	position: absolute;
 	content: "";
 	height: 20px;
@@ -36,11 +36,11 @@
 	border-radius: 50%;
 }
 
-input:checked + .post_display_timer_slider {
+input:checked + .pdt_display_timer_slider {
 	background-color: #2196F3;
 }
 
-input:checked + .post_display_timer_slider:before {
+input:checked + .pdt_display_timer_slider:before {
 	transform: translateX(26px);
 }
 

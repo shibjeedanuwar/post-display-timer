@@ -1,7 +1,7 @@
 === Post Display Timer ===
 Contributors: shibjeedanuwar
 Tags: post timer, content timer, timed content, post display timer, content management
-Requires at least: 6.0
+Requires at least: 6.3
 Tested up to: 6.7
 Stable tag: 1.0.0
 Requires PHP: 7.4

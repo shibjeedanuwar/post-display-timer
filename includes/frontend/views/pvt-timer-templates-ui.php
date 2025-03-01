@@ -68,7 +68,7 @@ defined( 'ABSPATH' ) || exit;
 				type="hidden" 
 				name="current_post_id" 
 				value="<?php echo esc_attr( $post_id ); ?>">
-			<?php wp_nonce_field( 'post_display_timer_nonce', 'post_timer_nonce' ); ?>
+			<?php wp_nonce_field( 'pdt_display_timer_nonce', 'post_timer_nonce' ); ?>
 			<button 
 				type="submit" 
 				class="pvt-timer-next-btn" 
