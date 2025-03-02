@@ -47,8 +47,6 @@ if ( ! function_exists( 'pdt_display_timer_uninstall' ) ) {
 			}
 		}
 
-		// Clean up any transients and other options with prefix.
-		pdt_display_timer_delete_plugin_options_and_transients();
 
 		// Clear any cached data.
 		wp_cache_flush();
