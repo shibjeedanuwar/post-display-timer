@@ -58,4 +58,4 @@ if ( ! function_exists( 'pdt_display_timer_uninstall' ) ) {
 }
 
 // Execute uninstall function.
-post_display_timer_uninstall();
+pdt_display_timer_uninstall();
