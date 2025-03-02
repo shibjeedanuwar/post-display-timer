@@ -6,6 +6,8 @@
  * @since 1.0.0
  */
 
+namespace pdt_display_timer\Admin;
+
 // Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 

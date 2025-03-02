@@ -6,7 +6,6 @@
  * @subpackage PostDisplayTimer/includes/core
  */
 
-
 // Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 

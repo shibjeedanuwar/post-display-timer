@@ -6,7 +6,7 @@
  * @since 1.0.0
  */
 
-namespace PDTDisplayTimer\Admin;
+namespace pdt_display_timer\Admin;
 
 // Prevent direct access.
 defined( 'ABSPATH' ) || exit;
@@ -46,9 +46,9 @@ function pdt_display_timer_add_admin_menu() {
  * @param string $hook Current admin page hook.
  */
 function pdt_display_timer_enqueue_admin_scripts( $hook ) {
-	// if ( 'toplevel_page_post-display-timer-settings' !== $hook ) {
-	// 	return;
-	// }
+	if ( 'toplevel_page_post-display-timer-settings' !== $hook ) {
+		return;
+	}
 
 	wp_enqueue_style(
 		'post-display-timer-admin',
