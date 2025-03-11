@@ -51,6 +51,8 @@ Yes, there's a built-in feature to prevent users from viewing posts in multiple 
 Yes, you can enable random post ordering in the plugin settings.
 
 == Screenshots ==
+1-Pattern. screenshot-1.png
+2-Pattern. screenshot-2.png
 
 
 == Changelog ==
