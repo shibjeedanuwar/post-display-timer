@@ -2,8 +2,8 @@
 /**
  * Plugin Name:       Post Display Timer
  * Plugin URI:        https://github.com/shibjeedanuwar/post-display-timer
- * Description:       Displays posts with a customizable timer, perfect for research studies and timed reading exercises.
- * Version:          1.0.0
+ * Description:       Post Display Timer is a powerful WordPress plugin that allows you to control how long visitors spend reading each post on your website. Perfect for research studies, timed reading exercises, or controlled content presentation.
+ * Version:          1.0.1
  * Requires at least: 6.3
  * Requires PHP:      7.4
  * Author:           Shibjee Danuwar
