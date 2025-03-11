@@ -53,6 +53,7 @@ Yes, you can enable random post ordering in the plugin settings.
 == Screenshots ==
 1-Pattern. screenshot-1.png
 2-Pattern. screenshot-2.png
+3-Pattern. screenshot-3.png
 
 
 == Changelog ==
